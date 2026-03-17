@@ -1,14 +1,14 @@
 # loan_approval_system
 
 
-🏦 Loan Approval Prediction Web App
-📌 Project Overview
+Loan Approval Prediction Web App
+* Project Overview
 
 This project is a Machine Learning based web application that predicts whether a loan application will be Approved or Rejected based on user inputs such as income, CIBIL score, assets, etc.
 
 The model is built using Logistic Regression and deployed using a Flask web application.
 
-🚀 Features
+* Features
 
 Predict loan approval status (Approved / Rejected)
 
@@ -18,7 +18,7 @@ Real-time prediction using trained ML model
 
 Simple and lightweight web interface
 
-🧠 Machine Learning Model
+* Machine Learning Model
 
 Algorithm: Logistic Regression
 
@@ -26,7 +26,7 @@ Type: Classification
 
 Target Variable: loan_status
 
-📊 Input Features:
+* Input Features:
 
 Number of Dependents
 
@@ -50,7 +50,7 @@ Luxury Assets Value
 
 Bank Asset Value
 
-🗂️ Project Structure
+* Project Structure
 loan_prediction_project/
 │
 ├── loan_model.pkl        # Trained ML model
@@ -59,23 +59,24 @@ loan_prediction_project/
 ├── templates/
 │   ├── index.html        # Input form
 │   └── result.html       # Prediction result
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+
+* Installation & Setup
+1️. Clone the repository
 git clone <your-repo-link>
 cd loan_prediction_project
-2️⃣ Install dependencies
+2️. Install dependencies
 pip install -r requirements.txt
 
 If requirements.txt is not available, install manually:
 
 pip install flask pandas scikit-learn joblib
-▶️ Run the Application
+▶ Run the Application
 python app.py
 
 Open your browser and go to:
 
 http://127.0.0.1:5000
-📈 How It Works
+* How It Works
 
 User enters details in the form
 
@@ -87,7 +88,7 @@ Model predicts loan status
 
 Result is displayed on screen
 
-💾 Model Saving
+* Model Saving
 
 The trained model is saved using:
 
@@ -96,22 +97,11 @@ joblib.dump(model, "loan_model.pkl")
 And loaded using:
 
 model = joblib.load("loan_model.pkl")
-📌 Future Improvements
 
-Add better UI using CSS & animations
-
-Use dropdowns instead of manual number inputs
-
-Display prediction probability
-
-Deploy on cloud (Render / Heroku)
-
-Add authentication system
-
-👨‍💻 Author
+* Author
 
 Harshda Patil
 
-⭐ Acknowledgement
+* Acknowledgement
 
 This project is built for learning Machine Learning deployment and real-world application development.
